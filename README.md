@@ -1,4 +1,4 @@
-War - Watch and Repeat
+War - Watch and repeat
 ======================
 
 War will watch a file or folder (and all of its content) and run a command
