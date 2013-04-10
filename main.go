@@ -36,8 +36,8 @@ func main() {
 
 	command := new(Command)
 	command.Cmd = command_str
-	err := Watch(path, *command)
-	if err != nil {
+
+	if err := Watch(path, *command); err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}

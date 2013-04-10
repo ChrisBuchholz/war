@@ -61,6 +61,7 @@ func Watch(path string, command Command) error {
 	} else {
 		err = watcher.Watch(path)
 	}
+
 	if err != nil {
 		return errors.New(fmt.Sprintf("Was not able to watch %s", path))
 	}

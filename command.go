@@ -39,6 +39,7 @@ func (c *Command) Execute() {
 	c.process.Stderr = os.Stderr
 	c.process.Stdin = os.Stdin
 	c.process.Stdout = os.Stdout
+
 	if err := c.process.Run(); err != nil {
 		log.Println("failed to run process.")
 	}
