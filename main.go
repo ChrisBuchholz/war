@@ -8,8 +8,8 @@ import (
 
 const (
 	NAME        string = "War"
-	DESCRIPTION string = "Watch a file or directory and repeat a command" +
-		"every time a change is detectec."
+	DESCRIPTION string = "Watch a file or directory and repeat a command " +
+		"every time a change is detected."
 	VERSION string = "0.1.0"
 )
 
