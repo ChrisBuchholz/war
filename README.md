@@ -8,7 +8,7 @@ to run a test whenever a change is detected in your source code.
 War uses [GNU Bash](https://www.gnu.org/software/bash/) to run the command
 and because of that, it is required that bash is installed on your machine.
 This should be the case for any modern UNIX based operating system like
-Mac OS X or Linux.
+Mac OS X, Linux and BSD.
 
 Besides that, the only other requirement is that [Go](http://golang.org) is
 [installed](http://golang.org/doc/install) and set up correctly on the
