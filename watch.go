@@ -37,12 +37,12 @@ func Watch(path string, command Command) error {
 		eventstream := watcher.Event
 		start_time := time.Now()
 		for event := range eventstream {
-			// 800 milliseconds is an approximate minimum we use because
+			// 1 second is an approximate minimum we use because
 			// when a file is edited, is will send multiple events with
-			// different types but we only want to get notified one
+			// different types but we only want to get notified once
 			//
 			// id very much like a cleaner more sensible solution :)
-			if time.Since(start_time) > time.Millisecond*800 {
+			if time.Since(start_time) > time.Second {
 				// if a subfolder is added we need to watch it and its content also
 				if event.IsCreate() {
 					if finfo, err := os.Stat(event.Name); err == nil && finfo.IsDir() {
