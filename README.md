@@ -29,3 +29,5 @@ continuesly builds War as I work on it. It will output whatever `go build`
 outputs, or 'No errors' if the code compiles.
 
     $ war . "go build && [ $? -eq 0 ] && echo 'No errors' && rm war"
+
+I'll have this running in a tmux split next to Vim. Pretty nifty!
