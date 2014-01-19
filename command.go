@@ -27,8 +27,8 @@ type Command struct {
 
 // execute string Command.Cmd as a bash command
 //
-// if a process is already running, it will kill that one
-// and before spawning a new one
+// if a process is already running, it will kill that
+// before spawning the new one
 func (c *Command) Execute() {
 	var stdout bytes.Buffer
 	var stderr bytes.Buffer
